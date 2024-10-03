@@ -97,14 +97,6 @@ LOGame >> countOpenCells [
 	^ cells count: [ :cell | cell isClose not ]
 ]
 
-{ #category : 'as yet unclassified' }
-LOGame >> endGame [
-	"Якщо час вийшов, завершуємо гру"
-
-	self inform: 'Час вийшов! Гра завершена.'.
-	self class close.
-]
-
 { #category : 'initialization' }
 LOGame >> initialize [
 
